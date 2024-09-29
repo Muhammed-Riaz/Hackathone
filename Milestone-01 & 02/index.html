@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>MADE BY RIAZ AHMED</h1>
+  <h1>Simple Resume Structure</h1>
+  <form>
+    <div class="resume">
+      <fieldset>
+        <legend>
+          <h1>Personal Information</h1>
+        </legend>
+        
+        <div class="leftside profile">
+          <label for="profile-picture" class="input-label">
+            <div class="input-wrapper">
+              <input type="file" id="profile-picture" accept="image/*" aria-label="Profile Picture">
+            </div>
+          </label>
+          <i style="font-size: 25px; font-weight: bold;">Profile</i>
+        </div>
+        <div class="rightside">
+          <div class="information">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your Name" required><br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" placeholder="Enter your Last Name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your Email" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your Number" required><br>
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter your Location"><br>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h1>Educational Information</h1>
+        </legend>
+        <div class="education">
+          <label for="education">Education:</label>
+          <textarea id="education" placeholder="Enter your Education" rows="4" required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h1>Experience Information</h1>
+        </legend>
+        <div class="experience">
+          <label for="experience">Work Experience:</label>
+          <textarea id="experience" placeholder="Enter your Experience" rows="5" required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h1>Skills</h1>
+        </legend>
+        <div class="skills">
+          <label for="skills">Skills:</label>
+          <textarea id="skills" placeholder="Enter your Skills" rows="2" required></textarea>
+        </div>
+      </fieldset>
+    </div>
+    <button id="button" type="submit">Generate Resume</button>
+    <button type="reset">Reset</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

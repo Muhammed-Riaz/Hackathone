@@ -1,0 +1,133 @@
+*{
+  color: white;
+}
+body {
+  margin: 20px;
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  background-color: #f7f7f7;
+  background-image: url(resume\ img.jpg);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  text-align: center;
+}
+form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.rightside {
+  width: 70%;
+  float: right;
+}
+.leftside {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.input-label {
+  border: 1px solid #ccc;
+  border-radius: 20%;
+  overflow: hidden;
+  width: 110px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  position: relative; 
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 100%;
+   opacity: 0;
+  position: absolute; 
+  cursor: pointer; 
+}
+
+img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+
+i {
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 45%;
+  height: 50px;
+  margin: 10px 2.5%;
+  background: linear-gradient(to right, lightskyblue, deepskyblue);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: linear-gradient(to right, deepskyblue, darkblue);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transform: scale(1.05);
+  border: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  .leftside, .rightside {
+    width: 100%;
+    float: none;
+  }
+
+  .input-label {
+    width: 70px;
+    height: 70px;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
