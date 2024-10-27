@@ -131,20 +131,19 @@ textarea {
 
 
 #upload-button {
-  margin-top: 39px;
-  margin-right: 20px;
+  width: 45%;
   height: 50px;
+  margin: 10px 2.5%;
   background: linear-gradient(to right, lightskyblue, deepskyblue);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   border-radius: 10px;
   border: none;
   color: white;
-  padding: 10px 13px;
+  padding: 10px 20px;
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  margin-left: 9px;
 }
 
 #upload-button:hover {
